@@ -4,8 +4,8 @@ project:
 website: 
   page-navigation: true
   title: {{cookiecutter.project_name}} 
-  site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/" 
-  repo-url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}} 
+  site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}/" 
+  repo-url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}} 
   repo-actions: [issue]
   
   page-footer:
@@ -29,11 +29,14 @@ website:
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Welcome
-      - about.qmd
+        text: Home
+      - href: about.qmd
+        text: About Us
+        icon: dot
       - href: slides/presentation_demo.qmd
         text: Example Presentation
         icon: dot
+
 
 
 format:

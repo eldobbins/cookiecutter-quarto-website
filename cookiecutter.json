@@ -3,9 +3,11 @@
   "email": "eldobbins@alaska.edu",
   "github_username": "eldobbins",
   "project_name": "New Quarto Website",
+  "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "project_short_description": "New Quarto Website contains all the boilerplate you need to create a website.",
   "version": "0.1.0",
-  "publish_with_github_actions": "y",
-  "create_author_file": "y"
+  "_copy_without_render": [
+    ".github/workflows/quarto-publish.yml"
+  ]
 }

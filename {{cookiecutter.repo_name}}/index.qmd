@@ -1,0 +1,20 @@
+---
+title: "{{cookiecutter.project_name}}"
+subtitle: "A Website Made with Quarto"
+---
+
+## Welcome  {{ '{#welcome}' }}
+
+Here is the place to put your welcome message
+
+
+## Section 1
+
+Put the Section 1 text here
+
+## Section 2
+
+This is a stoat
+
+[![This is a stoat.](https://britishwildlifecentre.co.uk/wp-content/uploads/2018/12/New-Website-Stoat-Pt-07-18.jpg){fig-alt="Stoat" width=200 fig-align="left"}](https://www.adfg.alaska.gov/static/education/wns/weasels.pdf "See Alaskan Weasels")
+
