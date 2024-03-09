@@ -7,5 +7,5 @@
   "project_short_description": "New Quarto Website contains all the boilerplate you need to create a website.",
   "version": "0.1.0",
   "publish_with_github_actions": "y",
-  "create_author_file": "y",
+  "create_author_file": "y"
 }

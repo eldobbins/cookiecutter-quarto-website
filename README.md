@@ -3,9 +3,9 @@
 A Cookiecutter template to make a project that is a [Quarto](https://quarto.org/) website with places for slides, notebooks, and images.
 
 
-GitHub repo: https://github.com/eldobbins/cookiecutter-quarto-website
-Documentation: https://cookiecutter-pypackage.readthedocs.io/
-Free software: BSD license
+- GitHub repo: https://github.com/eldobbins/cookiecutter-quarto-website
+- Documentation: https://cookiecutter-pypackage.readthedocs.io/
+- Free software: BSD license
 
 ## Features
 
@@ -24,7 +24,7 @@ A complete workflow for how to use a Cookiecutter template to make a GitHub repo
 
 1. Install Cookiecutter using the [Cookiecutter Installation Instructions](https://cookiecutter.readthedocs.io/en/stable/installation.html). I prefer the conda option.
 
-2. Copy the template into a new directory with `cookiecutter https://github.com/mgancita/cookiecutter-pypackage.git`. The name of the directory will be generated from your responses to the interactive prompts. We'll pretend it is `quarto-website`.
+2. Copy the template into a new directory with `cookiecutter gh:eldobbins/cookiecutter-quarto-website`. The name of the directory will be generated from your responses to the interactive prompts. We'll pretend it is `quarto-website`.
 
 3. Make the new directory a git repo, and [set the remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories) to your GitHub account
 ``` bash
