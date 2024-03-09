@@ -1,0 +1,18 @@
+---
+title: "NGA LTER Data Education Documents"
+subtitle: "Open-Source Tutorials"
+---
+
+## Welcome  {#welcome}
+
+An important element of the Northern Gulf of Alaska Long Term Ecological Research ([NGA LTER](https://nga.lternet.edu)) project
+is our series of trainings on the topics of data management and reprodicibility.
+
+
+## What are these documents?
+
+In this centralized location, you can find presentation slides and other materials from our training workshops. Some workshops, such as the 2021's [Beginning Scientific Programming for NGA LTER Graduate Students](https://nga-lter.github.io/2021-01-04-ngalter/) and [eight week REU](https://github.com/nga-lter/nga-reu-2021) workshop have their own dedicated GitHub repos. The slides for other workshops are included here.
+
+Link to [this repo](https://github.com/eldobbins/quarto-nga-docs).
+
+

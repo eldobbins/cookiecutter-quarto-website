@@ -2,15 +2,6 @@ BSD 3-Clause License
 
 Copyright (c) 2024, Liz Dobbins
 
-Cookiecutter set-up based on 
-https://github.com/audreyfeldroy/cookiecutter-pypackage, March 2024
-Copyright (c) Audrey Roy Greenfeld and individual contributors.
-
-Quarto website set-up based on
-https://github.com/Openscapes/quarto-website-tutorial, March 2024
-Creative Commons Attribution 4.0 International Public License
-
-
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 

@@ -1,0 +1,70 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "NGA LTER Education Documents" 
+  site-url: "https://eldobbins.github.io/quarto-nga-docs/" 
+  repo-url: https://github.com/eldobbins/quarto-nga-docs 
+  repo-actions: [issue]
+  
+  page-footer:
+    right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
+    left: "&copy; CC-By NGA LTER, 2023"
+    
+  sidebar:
+    logo: "images/ngalter.jpeg"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://nga.lternet.edu
+        text: "NGA LTER"
+      - icon: github
+        href: https://github.com/nga-lter
+        text: "NGA LTER GitHub Repo"
+      - icon: instagram
+        href: https://www.instagram.com/nga.lter/
+        text: "NGA LTER Instagram"         
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - href: https://nga-lter.github.io/2021-01-04-ngalter/
+        text: 2021 Four Day Carpentries Programming Workshop
+        icon: dot
+      - href: workshops/2021_data_workshop.qmd
+        text: 2021 Eight Week REU Series
+        icon: dot
+      - href: workshops/2023_git_workshop.qmd
+        text: 2023 One Day Git Workshop
+        icon: dot
+      - href: workshops/2023_data_workshop.qmd
+        text: 2023 Four Week REU Series
+        icon: dot
+      - href: resources/programming.qmd
+        text: Programming Resources 
+        icon: dot
+      - href: resources/open_science.qmd
+        text: Open Science Resources 
+        icon: dot
+        
+
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - quarto
+
+  
