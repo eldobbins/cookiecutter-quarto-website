@@ -1,0 +1,16 @@
+# idea for separate _quarto.yml for redering slides from 
+# https://github.com/ShKlinkenberg/statistics-lectures/blob/master/courses/_quarto.yml
+# author: "Sharon Klinkenberg"
+institute: "{{cookiecutter.full_name}}"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-location: left
+  revealjs:
+    smaller: false
+    linkcolor: '#BC0031'
+    transition: slide
+    background-transition: fade
+    slide-number: true
+    touch: true

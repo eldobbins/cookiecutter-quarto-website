@@ -3,29 +3,26 @@ project:
   
 website: 
   page-navigation: true
-  title: "NGA LTER Education Documents" 
-  site-url: "https://eldobbins.github.io/quarto-nga-docs/" 
-  repo-url: https://github.com/eldobbins/quarto-nga-docs 
+  title: {{cookiecutter.project_name}} 
+  site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.project_slug}}/" 
+  repo-url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.project_slug}} 
   repo-actions: [issue]
   
   page-footer:
     right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
-    left: "&copy; CC-By NGA LTER, 2023"
+    left: "&copy; CC-By , 2023"
     
   sidebar:
-    logo: "images/ngalter.jpeg"
+    logo: "images/data-duck.png"
     pinned: true
     align: center
     tools: 
       - icon: globe
-        href: https://nga.lternet.edu
-        text: "NGA LTER"
+        href: https://cookiecutter.readthedocs.io/en/stable/
+        text: "Cookiecutter Project Templates"
       - icon: github
-        href: https://github.com/nga-lter
-        text: "NGA LTER GitHub Repo"
-      - icon: instagram
-        href: https://www.instagram.com/nga.lter/
-        text: "NGA LTER Instagram"         
+        href: https://github.com/{{cookiecutter.github_username}}
+        text: "{{cookiecutter.full_name}}'s GitHub"      
 
     style: "docked"
     search: true
@@ -33,25 +30,10 @@ website:
     contents:
       - href: index.qmd
         text: Welcome
-      - href: https://nga-lter.github.io/2021-01-04-ngalter/
-        text: 2021 Four Day Carpentries Programming Workshop
+      - about.qmd
+      - href: slides/presentation_demo.qmd
+        text: Example Presentation
         icon: dot
-      - href: workshops/2021_data_workshop.qmd
-        text: 2021 Eight Week REU Series
-        icon: dot
-      - href: workshops/2023_git_workshop.qmd
-        text: 2023 One Day Git Workshop
-        icon: dot
-      - href: workshops/2023_data_workshop.qmd
-        text: 2023 Four Week REU Series
-        icon: dot
-      - href: resources/programming.qmd
-        text: Programming Resources 
-        icon: dot
-      - href: resources/open_science.qmd
-        text: Open Science Resources 
-        icon: dot
-        
 
 
 format:
@@ -61,6 +43,7 @@ format:
       dark: [cosmo, theme-dark.scss]
     code-copy: true
     code-overflow: wrap
+    css: styles.css
     toc: true
 
 

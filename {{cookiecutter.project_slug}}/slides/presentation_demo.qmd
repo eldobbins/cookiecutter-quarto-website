@@ -1,0 +1,27 @@
+---
+title: "Demo Presentation"
+subtitle: "To Demonstrate Slides"
+author: "{{cookiecutter.full_name}}"
+format:
+  revealjs:
+    slide-number: true
+    _logo: ../../images/data-duck.png
+    footer: Demo Presentation
+    header-logo: ../../images/data-duck.png
+    theme: serif
+filters:
+  - reveal-header
+
+---
+
+## Introductions
+
+Put text here
+
+## Second Slide
+
+Put text here
+
+::: {.notes}
+These are the speaker's notes
+:::
