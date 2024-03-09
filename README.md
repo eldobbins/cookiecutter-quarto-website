@@ -17,10 +17,32 @@ Free software: BSD license
 * several subdirectories to install content
 * a conda environment to allow quarto to run.  Includes JupyterLab for the notebooks.
 
-## Required Manual Interventions
 
-https://quarto.org/docs/manuscripts/publishing.html#authorize-github-actions
+## How to Create a New Project
 
-Do you need to make the branch too? Or will that pop up automatically
+A complete workflow for how to use a Cookiecutter template to make a GitHub repo can be found at https://gist.github.com/cjtu/74a38e1ad066e714218762b910d0910e. This set-up is slightly different because it includes automatic publishing via GitHub Actions.
 
+1. Install Cookiecutter using the [Cookiecutter Installation Instructions](https://cookiecutter.readthedocs.io/en/stable/installation.html). I prefer the conda option.
 
+2. Copy the template into a new directory with `cookiecutter https://github.com/mgancita/cookiecutter-pypackage.git`. The name of the directory will be generated from your responses to the interactive prompts. We'll pretend it is `quarto-website`.
+
+3. Make the new directory a git repo, and [set the remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories) to your GitHub account
+``` bash
+cd quarto-website
+git init
+git add -A
+git commit -m "Make new repo from cookiecutter-quarto-website"
+git remote add origin https://github.com/OWNER/REPOSITORY.git 
+git remote -v
+```
+
+4. Go to GitHub, click + "make a new repository", call it the same thing as your cookiecutter folder: `quarto-website`.  
+
+5. Follow Quarto's instructions to authorize [GitHub Actions](https://quarto.org/docs/manuscripts/publishing.html#authorize-github-actions) for your repo if they aren't enabled by default
+
+6. Follow Openscapes's instructions for [Set-up GitHub Publishing](https://openscapes.github.io/quarto-website-tutorial/explore.html#setup-github-action). You can skip the section on GitHub Actions because this should already be done. But you will need to make a new `gh-pages` branch and use it for the published website.
+
+7. Back to the terminal
+``` bash
+git push -u origin main
+```
