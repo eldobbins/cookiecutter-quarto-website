@@ -49,8 +49,7 @@ git add -A
 git commit -m "Make new repo from cookiecutter-quarto-website"
 git remote add origin git@github.com:eldobbins/new-quarto-website
 git remote -v
-git git branch --set-upstream-to=origin/main main
-git push --force
+git push --force -u origin main
 ```
 
 9. Check the Actions tab at github.com. You should see a queued or successful event called `pages build and deployment`.  Wait till it finished. (Refresh the page to update its progress.)
