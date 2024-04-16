@@ -18,3 +18,13 @@ This is a stoat
 
 [![This is a stoat.](https://britishwildlifecentre.co.uk/wp-content/uploads/2018/12/New-Website-Stoat-Pt-07-18.jpg){fig-alt="Stoat" width=200 fig-align="left"}](https://www.adfg.alaska.gov/static/education/wns/weasels.pdf "See Alaskan Weasels")
 
+{% if cookiecutter.R_code -%}
+
+## Inline Code
+
+
+```{r}
+print("Hello World!  This was printed with R")
+```
+
+{% endif %}

@@ -2,21 +2,19 @@
 
 A Cookiecutter template to make a project that is a [Quarto](https://quarto.org/) website with places for slides, notebooks, and images.
 
-
 - GitHub repo: https://github.com/eldobbins/cookiecutter-quarto-website
 - Documentation: https://cookiecutter-pypackage.readthedocs.io/
 - Free software: BSD license
 
 ## Features
 
-* Contains the basic building blocks to create a [Quarto based website](https://quarto.org/docs/websites/).
-  * [_quarto.yml](https://quarto.org/docs/websites/website-navigation.html#top-navigation) configuration file to generate the website navigation
-  * index.qmd to serve as the homepage of the website
-* a [GitHub action](https://github.com/features/actions) workflow to publish the website to [GitHub Pages](https://pages.github.com/)
-* .gitignore file that will ignore the rendered HTML of the site
-* several subdirectories to install content into
-* a conda environment to allow quarto to run.  Includes JupyterLab for the notebooks.
-
+- Contains the basic building blocks to create a [Quarto based website](https://quarto.org/docs/websites/).
+  - [_quarto.yml](https://quarto.org/docs/websites/website-navigation.html#top-navigation) configuration file to generate the website navigation
+  - index.qmd to serve as the homepage of the website
+- a [GitHub action](https://github.com/features/actions) workflow to publish the website to [GitHub Pages](https://pages.github.com/)
+- .gitignore file that will ignore the rendered HTML of the site
+- several subdirectories to install content into
+- a conda environment to allow quarto to run.  Includes JupyterLab for the notebooks.
 
 ## How to Create a New Project
 
@@ -27,7 +25,7 @@ Here are the commands to set-up a new project and to conntect it to a GitHub rep
 
 2. [Start a new GitHub repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) using the online developer platform (hereafter called github.com). Go to your equivalent of `https://github.com/eldobbins?tab=repositories` and click the `New` button.
     1. Note the repository name you choose (i.e. `new-quarto-website`)
-    2.  Create a README.md file (and a main branch) while making the repo
+    2. Create a README.md file (and a main branch) while making the repo
 
 3. Still at github.com, create the new branch in GitHub that will contain the rendered HTML website. That branch should be called `gh-pages`.
 
@@ -41,21 +39,21 @@ Here are the commands to set-up a new project and to conntect it to a GitHub rep
     1. The name of the directory will be generated from your responses to the interactive prompts. For our example, enter "New Quarto Website" to match the repository name above.
 
 8. Make the new directory a git repo, and [set the remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories) to your GitHub account
-``` bash
-cd new-quarto-website
-git init
-git branch -M main
-git add -A
-git commit -m "Make new repo from cookiecutter-quarto-website"
-git remote add origin git@github.com:eldobbins/new-quarto-website
-git remote -v
-git push --force -u origin main
-```
+
+    ``` bash
+    cd new-quarto-website
+    git init
+    git branch -M main
+    git add -A
+    git commit -m "Make new repo from cookiecutter-quarto-website"
+    git remote add origin git@github.com:eldobbins/new-quarto-website
+    git remote -v
+    git push --force -u origin main
+    ```
 
 9. Check the Actions tab at github.com. You should see a queued or successful event called `pages build and deployment`.  Wait till it finished. (Refresh the page to update its progress.)
 
 10. Look at the new website. If you see the README text, then the page did not build or deploy. Check the Actions tab for error messages and fix them.
-
 
 ## More Sources of Information
 
