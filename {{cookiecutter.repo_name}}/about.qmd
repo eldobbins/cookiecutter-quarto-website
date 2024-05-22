@@ -1,5 +1,13 @@
 ---
 title: "About"
+author:
+  - name: {{cookiecutter.full_name}}
+    url: https://github.com/{{cookiecutter.github_username}}
+    affiliation: "University of Alaska Fairbanks"
+    affiliation-url: https://www.uaf.edu/ 
+type: webpage
+citation: true
+date: {% now 'utc', '%Y-%m-%d' %}
 ---
 
 About this site

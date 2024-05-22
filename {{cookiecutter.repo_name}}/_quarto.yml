@@ -10,7 +10,7 @@ website:
   
   page-footer:
     right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
-    left: "&copy; CC-By , 2023"
+    left: "&copy; CC BY-SA 4.0, {% now 'utc', '%Y' %}"
     
   sidebar:
     logo: "images/data-duck.png"
