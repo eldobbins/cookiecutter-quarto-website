@@ -8,9 +8,11 @@ A Cookiecutter template to make a project that is a [Quarto](https://quarto.org/
 
 ## Features
 
-- Contains the basic building blocks to create a [Quarto based website](https://quarto.org/docs/websites/).
-  - [_quarto.yml](https://quarto.org/docs/websites/website-navigation.html#top-navigation) configuration file to generate the website navigation
-  - index.qmd to serve as the homepage of the website
+- Contains the basic building blocks to create a [Quarto based website](https://quarto.org/docs/websites/) or a [Quarto web book](https://quarto.org/docs/reference/projects/books.html).
+  - [_quarto.yml](https://quarto.org/docs/websites/website-navigation.html#top-navigation) configuration file to generate the website navigation or a book table of contents.
+  - index.qmd to serve as the homepage of the website or the first chapter of the web book.
+  - about.qmd to provide a citation for the website or an appendix in the web book.
+  - optionally included R code block as an example on inline code.
 - a [GitHub action](https://github.com/features/actions) workflow to publish the website to [GitHub Pages](https://pages.github.com/)
 - .gitignore file that will ignore the rendered HTML of the site
 - several subdirectories to install content into
@@ -20,8 +22,9 @@ A Cookiecutter template to make a project that is a [Quarto](https://quarto.org/
 
 Here are the commands to set-up a new project and to conntect it to a GitHub repo with  automatic publishing via GitHub Actions.
 
-1. Install Cookiecutter on your local computer using the [Cookiecutter Installation Instructions](https://cookiecutter.readthedocs.io/en/stable/installation.html). I prefer the conda option and an environment called `cookies` generated from the included `environment.yml file.  
-    1. `conda activate cookies`  
+1. Install Cookiecutter on your local computer using the [Cookiecutter Installation Instructions](https://cookiecutter.readthedocs.io/en/stable/installation.html). I prefer the conda option and an environment called `cookies` generated from the included `environment.yml` file.  
+    1. `conda env create --file environment.yml`
+    2. `conda activate cookies`  
 
 2. [Start a new GitHub repo](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories) using the online developer platform (hereafter called github.com). Go to your equivalent of `https://github.com/eldobbins?tab=repositories` and click the `New` button.
     1. Note the repository name you choose (i.e. `new-quarto-website`)

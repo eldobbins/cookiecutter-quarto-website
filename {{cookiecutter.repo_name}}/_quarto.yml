@@ -1,9 +1,18 @@
-project: 
+{%- if cookiecutter.web_book -%}
+project:
+  type: book
+
+book:
+{%- else -%}
+project:
   type: website
-  
-website: 
+
+website:
+{%- endif %}
   page-navigation: true
   title: {{cookiecutter.project_name}} 
+  author: {{cookiecutter.full_name}}
+  description: {{cookiecutter.project_short_description}}
   site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}/" 
   repo-url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}} 
   repo-actions: [issue]
@@ -22,8 +31,13 @@ website:
         text: "Cookiecutter Project Templates"
       - icon: github
         href: https://github.com/{{cookiecutter.github_username}}
-        text: "{{cookiecutter.full_name}}'s GitHub"      
-
+        text: "{{cookiecutter.full_name}}'s GitHub"
+{% if cookiecutter.web_book %}
+  chapters:
+    - index.qmd
+  appendices:
+    - about.qmd
+{%- else %}
     style: "docked"
     search: true
     collapse-level: 1
@@ -36,8 +50,7 @@ website:
       - href: slides/presentation_demo.qmd
         text: Example Presentation
         icon: dot
-
-
+{%- endif %}
 
 format:
   html:
@@ -53,4 +66,4 @@ format:
 filters:
   - quarto
 
-  
+
