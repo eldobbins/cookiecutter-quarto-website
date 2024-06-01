@@ -61,7 +61,13 @@ format:
     code-overflow: wrap
     css: styles.css
     toc: true
-
+{%- if cookiecutter.web_book -%}
+  pdf:
+    documentclass: scrreprt # LaTex document class as implemented by KOMA-script (book, report, article, letter)
+    toc: true
+    lof: true
+    lot: true
+{%- endif %}
 
 filters:
   - quarto

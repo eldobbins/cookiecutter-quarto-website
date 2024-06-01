@@ -58,6 +58,8 @@ Here are the commands to set-up a new project and to conntect it to a GitHub rep
 
 10. Look at the new website. If you see the README text, then the page did not build or deploy. Check the Actions tab for error messages and fix them.
 
+11. If using a web-book, it can be rendered into PDF format on the command line of your local computer with `quarto render --to pdf`. You might have to enable SVG support. Quarto's [PDF Format Improvements](https://quarto.org/docs/prerelease/1.3/pdf.html) includes install instructions, but [librsvg](https://anaconda.org/conda-forge/librsvg), available via Conda and conda-forge, also works.
+
 ## More Sources of Information
 
 Here are some places to look for information if you get stuck.

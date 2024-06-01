@@ -1,6 +1,10 @@
 ---
 title: "{{cookiecutter.project_name}}"
+{%- if cookiecutter.web_book -%}
+subtitle: "A Book Made with Quarto"
+{%- else -%}
 subtitle: "A Website Made with Quarto"
+{%- endif -%}
 ---
 
 ## Welcome  {{ '{#welcome}' }}
