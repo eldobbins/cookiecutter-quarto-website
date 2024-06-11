@@ -13,9 +13,12 @@ website:
   title: {{cookiecutter.project_name}} 
   author: {{cookiecutter.full_name}}
   description: {{cookiecutter.project_short_description}}
-  site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}/" 
+  # site-url: "https://{{cookiecutter.github_username}}/{{cookiecutter.repo_name}}/" 
   repo-url: https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.repo_name}} 
   repo-actions: [issue]
+{%- if cookiecutter.web_book %}
+  downloads: [pdf]
+{%- endif %}
   
   page-footer:
     right: "This page is based on Openscape's [Quarto Site Template](https://github.com/Openscapes/quarto-website-tutorial) and built with [Quarto](https://quarto.org/) ."
@@ -65,8 +68,8 @@ format:
   pdf:
     documentclass: scrreprt # LaTex document class as implemented by KOMA-script (book, report, article, letter)
     toc: true
-    lof: true
-    lot: true
+    lof: false
+    lot: false
 {%- endif %}
 
 filters:
